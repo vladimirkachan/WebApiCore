@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "dUS/YkVU7bd/czyOsrdIpPOuaZ8Lrkln/imPIMqmlDuilI3KQVU+iQHFexf/8MeG1aKYygmT6MNoUjlzX2ylMg==",
+  "success": true,
+  "projectFilePath": "D:\\Video Course\\ITVDN\\ASP.NET Core Web API. Практический курс (2021)\\WebApiCore\\WebApiCore.Api\\WebApiCore.Api.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Vladimir\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
+    "C:\\Users\\Vladimir\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
+    "C:\\Users\\Vladimir\\.nuget\\packages\\swashbuckle.aspnetcore\\5.6.3\\swashbuckle.aspnetcore.5.6.3.nupkg.sha512",
+    "C:\\Users\\Vladimir\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\5.6.3\\swashbuckle.aspnetcore.swagger.5.6.3.nupkg.sha512",
+    "C:\\Users\\Vladimir\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\5.6.3\\swashbuckle.aspnetcore.swaggergen.5.6.3.nupkg.sha512",
+    "C:\\Users\\Vladimir\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\5.6.3\\swashbuckle.aspnetcore.swaggerui.5.6.3.nupkg.sha512"
+  ],
+  "logs": []
+}
