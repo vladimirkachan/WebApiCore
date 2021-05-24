@@ -4,36 +4,41 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
+using WebApiCore.Api.Context;
+using WebApiCore.Api.Models;
 
 namespace WebApiCore.Api.Controllers
 {
     [ApiController]
-    [Route("[controller]")]
+    [Route("api/[controller]")]
     public class WeatherForecastController : ControllerBase
     {
-        private static readonly string[] Summaries = new[]
-        {
-            "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
-        };
+        readonly WebApiCoreContext context;
 
-        private readonly ILogger<WeatherForecastController> _logger;
-
-        public WeatherForecastController(ILogger<WeatherForecastController> logger)
+        public WeatherForecastController(WebApiCoreContext context)
         {
-            _logger = logger;
+            this.context = context;
         }
 
         [HttpGet]
-        public IEnumerable<WeatherForecast> Get()
+        public IEnumerable<Customer> Get()
         {
-            var rng = new Random();
-            return Enumerable.Range(1, 5).Select(index => new WeatherForecast
-            {
-                Date = DateTime.Now.AddDays(index),
-                TemperatureC = rng.Next(-20, 55),
-                Summary = Summaries[rng.Next(Summaries.Length)]
-            })
-            .ToArray();
+            return context.Customers.ToList();
         }
+
+        [HttpGet]
+        public ActionResult<Customer> Get(int id)
+        {
+            return new Customer {BirthDate = DateTime.Now, Email = "kachan@mail.com", Name = "Vova", Id = id.ToString()};
+        }
+
+        [HttpPost]
+        public void Post([FromQuery] Customer value) {}
+
+        [HttpPut("{id}")]
+        public void Put(int id, [FromBody] Customer value) {}
+
+        [HttpDelete("{id}")]
+        public void Delete(int id) {}
     }
 }
