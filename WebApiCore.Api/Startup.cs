@@ -29,7 +29,7 @@ namespace WebApiCore.Api
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            string connectionString = Configuration.GetConnectionString("DefaultConnection");
+            string connectionString = Configuration.GetSection("ConnectionString")["DefaultConnection"];
             services.AddControllers();
             services.AddSwaggerGen(c =>
             {
