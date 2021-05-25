@@ -12,8 +12,8 @@ namespace WebApiCore.Api.Models
         [Key] 
         public int Id { get; set; }
         public string Status {get; set;}
-        public float Temperature {get; set;}
-        public float MinTemperature {get; set;}
-        public float MaxTemperature {get; set;}
+        public double Temperature {get; set;}
+        public double MinTemperature {get; set;}
+        public double MaxTemperature {get; set;}
     }
 }

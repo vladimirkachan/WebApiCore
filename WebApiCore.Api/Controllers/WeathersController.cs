@@ -1,11 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
 using Microsoft.AspNetCore.Mvc;
-using WebApiCore.Api.Context;
 using WebApiCore.Api.Models;
+using WebApiCore.Api.Repository;
 
 namespace WebApiCore.Api.Controllers
 {
@@ -13,23 +9,23 @@ namespace WebApiCore.Api.Controllers
     [Route("api/[controller]")]
     public class WeathersController : ControllerBase
     {
-        readonly WebApiCoreContext context;
+        public IRepository<Weather> Context {get;}
 
-        public WeathersController(WebApiCoreContext context)
+        public WeathersController(IRepository<Weather> context)
         {
-            this.context = context;
+            Context = context;
         }
 
         [HttpGet]
         public IEnumerable<Weather> Get()
         {
-            return context.Weathers.ToList();
+            return Context.All;
         }
 
         [HttpGet("{id}")]
         public ActionResult<Weather> Get(int id)
         {
-            return new Weather { Id = 777, Status = "Frosty", Temperature = 45.5f, MaxTemperature = 59.99f, MinTemperature = 25 };
+            return new Weather { Id = id, Status = "Frosty", Temperature = 45.5f, MaxTemperature = 59.99f, MinTemperature = 25f };
         }
 
         [HttpPost]

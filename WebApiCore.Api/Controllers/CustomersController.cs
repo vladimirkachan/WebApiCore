@@ -1,11 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.Extensions.Logging;
-using WebApiCore.Api.Context;
 using WebApiCore.Api.Models;
+using WebApiCore.Api.Repository;
 
 namespace WebApiCore.Api.Controllers
 {
@@ -13,17 +10,17 @@ namespace WebApiCore.Api.Controllers
     [Route("api/[controller]")]
     public class CustomersController : ControllerBase
     {
-        readonly WebApiCoreContext context;
+        public IRepository<Customer> Context {get;}
 
-        public CustomersController(WebApiCoreContext context)
+        public CustomersController(IRepository<Customer> context)
         {
-            this.context = context;
+            Context = context;
         }
 
         [HttpGet]
         public IEnumerable<Customer> Get()
         {
-            return context.Customers.ToList();
+            return Context.All;
         }
 
         [HttpGet("{id}")]
