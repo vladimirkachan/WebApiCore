@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace WebApiCore.Api.Models
 {
-    public class CurrentWeather
+    public class Weather
     {
         [Key] 
         public int Id { get; set; }

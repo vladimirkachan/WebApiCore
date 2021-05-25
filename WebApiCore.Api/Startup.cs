@@ -14,6 +14,8 @@ using Microsoft.Extensions.Logging;
 using Microsoft.IdentityModel.Protocols;
 using Microsoft.OpenApi.Models;
 using WebApiCore.Api.Context;
+using WebApiCore.Api.Models;
+using WebApiCore.Api.Repository;
 
 namespace WebApiCore.Api
 {
@@ -37,6 +39,8 @@ namespace WebApiCore.Api
             });
             services.AddDbContext<WebApiCoreContext>(
             builder => builder.UseSqlServer(connectionString, b => b.MigrationsAssembly("WebApiCore.Api")));
+            services.AddScoped<IRepository<Customer>, CustomerRepository>();
+            services.AddScoped<IRepository<Weather>, WeatherRepository>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

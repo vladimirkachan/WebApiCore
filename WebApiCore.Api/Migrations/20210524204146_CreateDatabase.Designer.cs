@@ -21,7 +21,7 @@ namespace WebApiCore.Api.Migrations
                 .HasAnnotation("ProductVersion", "5.0.6")
                 .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-            modelBuilder.Entity("WebApiCore.Api.Models.CurrentWeather", b =>
+            modelBuilder.Entity("WebApiCore.Api.Models.Weather", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
