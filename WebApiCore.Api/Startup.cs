@@ -43,6 +43,7 @@ namespace WebApiCore.Api
             services.AddScoped<IRepository<Customer>, CustomerRepository>();
             services.AddScoped<IRepository<Weather>, WeatherRepository>();
             IoCContainer.Register<IRepository<Customer>, CustomerRepository>();
+            IoCContainer.Register<IRepository<Weather>, WeatherRepository>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
