@@ -26,7 +26,7 @@ namespace WebApiCore.Api.Controllers
             return context.Customers.ToList();
         }
 
-        [HttpGet]
+        [HttpGet("{id}")]
         public ActionResult<Customer> Get(int id)
         {
             return new Customer {BirthDate = DateTime.Now, Email = "kachan@mail.com", Name = "Vova", Id = id.ToString()};
