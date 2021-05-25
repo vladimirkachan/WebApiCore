@@ -13,7 +13,10 @@ using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.IdentityModel.Protocols;
 using Microsoft.OpenApi.Models;
+using Services;
 using WebApiCore.Api.Context;
+using WebApiCore.Api.Models;
+using WebApiCore.Api.Repository;
 
 namespace WebApiCore.Api
 {
@@ -29,7 +32,7 @@ namespace WebApiCore.Api
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            string connectionString = Configuration.GetConnectionString("DefaultConnection");
+            string connectionString = Configuration.GetSection("ConnectionString")["DefaultConnection"];
             services.AddControllers();
             services.AddSwaggerGen(c =>
             {
@@ -37,6 +40,12 @@ namespace WebApiCore.Api
             });
             services.AddDbContext<WebApiCoreContext>(
             builder => builder.UseSqlServer(connectionString, b => b.MigrationsAssembly("WebApiCore.Api")));
+            //services.AddSingleton<IRepository<Customer>, CustomerRepository>();
+            services.AddScoped<IRepository<Customer>, CustomerRepository>();
+            //services.AddTransient<IRepository<Customer>, CustomerRepository>();
+            services.AddScoped<IRepository<Weather>, WeatherRepository>();
+            IoCContainer.Register<IRepository<Customer>, CustomerRepository>();
+            IoCContainer.Register<IRepository<Weather>, WeatherRepository>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
