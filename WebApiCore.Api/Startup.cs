@@ -40,7 +40,9 @@ namespace WebApiCore.Api
             });
             services.AddDbContext<WebApiCoreContext>(
             builder => builder.UseSqlServer(connectionString, b => b.MigrationsAssembly("WebApiCore.Api")));
+            //services.AddSingleton<IRepository<Customer>, CustomerRepository>();
             services.AddScoped<IRepository<Customer>, CustomerRepository>();
+            //services.AddTransient<IRepository<Customer>, CustomerRepository>();
             services.AddScoped<IRepository<Weather>, WeatherRepository>();
             IoCContainer.Register<IRepository<Customer>, CustomerRepository>();
             IoCContainer.Register<IRepository<Weather>, WeatherRepository>();

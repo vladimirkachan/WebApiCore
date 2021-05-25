@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using Microsoft.AspNetCore.Mvc;
+using Services;
 using WebApiCore.Api.Models;
 using WebApiCore.Api.Repository;
 
@@ -15,6 +16,7 @@ namespace WebApiCore.Api.Controllers
         public CustomersController(IRepository<Customer> context)
         {
             Context = context;
+            //Context = IoCContainer.Resolve<IRepository<Customer>>();
         }
 
         [HttpGet]
