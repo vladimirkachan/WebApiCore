@@ -10,11 +10,12 @@ namespace WebApiCore.Data.Context
 {
     public class MongoContext
     {
-        public IMongoCollection<Customer> Customers {get;}
+        public CustomersMongoCollection Customers {get;}
         public MongoContext(MongoDBSettings settings)
         {
             var client = new MongoClient(settings.ConnectionString);
-            Customers = client.GetDatabase(settings.DatabaseName).GetCollection<Customer>(settings.CustomersCollectionName);
+            var database = client.GetDatabase(settings.DatabaseName);
+            Customers = new CustomersMongoCollection(database.GetCollection<Customer>(settings.CustomersCollectionName));
         }
     }
 }

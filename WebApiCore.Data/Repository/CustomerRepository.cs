@@ -9,7 +9,7 @@ namespace WebApiCore.Data.Repository
     {
         readonly MongoContext context;
 
-        public CustomerRepository(WebApiCoreContext context)
+        public CustomerRepository(MongoContext context)
         {
             this.context = context;
         }
@@ -21,13 +21,11 @@ namespace WebApiCore.Data.Repository
         }
         public void Delete(Customer entity)
         {
-            context.Customers.Remove(entity);
-            context.SaveChanges();
+            context.Customers.Remove(entity); 
         }
         public void Update(Customer entity)
         {
             context.Customers.Update(entity);
-            context.SaveChanges();
         }
         public Customer FindById(int id)
         {

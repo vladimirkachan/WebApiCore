@@ -10,10 +10,10 @@ namespace WebApiCore.Data.Repository
     {
         readonly WebApiCoreContext context;
 
-        public WeatherRepository(WebApiCoreContext context)
-        {
-            this.context = context;
-        }
+        //public WeatherRepository(WebApiCoreContext context)
+        //{
+        //    this.context = context;
+        //}
 
         public IEnumerable<Weather> All => context.Weathers.ToList();
         public void Add(Weather entity)

@@ -4,6 +4,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using Microsoft.Extensions.Options;
 using Microsoft.OpenApi.Models;
 using Services;
 using WebApiCore.Data.Context;
@@ -26,6 +27,7 @@ namespace WebApiCore.Api
         {
             string connectionString = Configuration.GetSection("ConnectionString")["DefaultConnection"];
             services.Configure<MongoDBSettings>(Configuration.GetSection("MongoDBSettings"));
+            services.AddSingleton<MongoDBSettings>(sp => sp.GetRequiredService<IOptions<MongoDBSettings>>().Value);
             services.AddControllers();
             services.AddSwaggerGen(c =>
             {
@@ -37,6 +39,7 @@ namespace WebApiCore.Api
             //services.AddTransient<IRepository<Customer>, CustomerRepository>();
             services.AddScoped<IRepository<Customer>, CustomerRepository>();
             services.AddScoped<IRepository<Weather>, WeatherRepository>();
+            services.AddSingleton<MongoContext>();
             //IoCContainer.Register<IRepository<Customer>, CustomerRepository>();
             //IoCContainer.Register<IRepository<Weather>, WeatherRepository>();
         }
