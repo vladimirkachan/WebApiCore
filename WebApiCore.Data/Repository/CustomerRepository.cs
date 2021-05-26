@@ -7,7 +7,7 @@ namespace WebApiCore.Data.Repository
 {
     public class CustomerRepository : IRepository<Customer>
     {
-        readonly WebApiCoreContext context;
+        readonly MongoContext context;
 
         public CustomerRepository(WebApiCoreContext context)
         {
