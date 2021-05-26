@@ -1,8 +1,8 @@
 ﻿using System;
 using Microsoft.EntityFrameworkCore;
-using WebApiCore.Api.Models;
+using WebApiCore.Data.Models;
 
-namespace WebApiCore.Api.Context
+namespace WebApiCore.Data.Context
 {
     public class WebApiCoreContext : DbContext
     {

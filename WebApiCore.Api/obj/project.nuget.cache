@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "dNfYX/vyPRqLvm8nh7OJvDKT6diVN2Caymjz/7Q79ep/H8Q4qTKZ8kE7fkWRg3lHjDwXF9Ys4cYvU15VQhCFUg==",
+  "dgSpecHash": "XirU42uowGTOJtofV2RzdSazUCgNcuBuQbqhutULPNDzkjpdT4LGNd1VScikLs+K59t+C17EkhqZOEs7i1srGg==",
   "success": true,
-  "projectFilePath": "D:\\Video Course\\ITVDN\\ASP.NET Core Web API. Практический курс (2021)\\WebApiCore\\WebApiCore.Api\\WebApiCore.Api.csproj",
+  "projectFilePath": "D:\\Video Course\\ITVDN\\ASP.NET Core Web API. Практический курс (2021)\\WebApiCoreDevelopment\\WebApiCore\\WebApiCore.Api\\WebApiCore.Api.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Vladimir\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\Vladimir\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",

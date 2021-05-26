@@ -10,3 +10,15 @@ D:\Video Course\ITVDN\ASP.NET Core Web API. Практический курс (2
 D:\Video Course\ITVDN\ASP.NET Core Web API. Практический курс (2021)\WebApiCore\WebApiCore.Data\obj\Debug\net5.0\WebApiCore.Data.dll
 D:\Video Course\ITVDN\ASP.NET Core Web API. Практический курс (2021)\WebApiCore\WebApiCore.Data\obj\Debug\net5.0\ref\WebApiCore.Data.dll
 D:\Video Course\ITVDN\ASP.NET Core Web API. Практический курс (2021)\WebApiCore\WebApiCore.Data\obj\Debug\net5.0\WebApiCore.Data.pdb
+D:\Video Course\ITVDN\ASP.NET Core Web API. Практический курс (2021)\WebApiCoreDevelopment\WebApiCore\WebApiCore.Data\bin\Debug\net5.0\WebApiCore.Data.deps.json
+D:\Video Course\ITVDN\ASP.NET Core Web API. Практический курс (2021)\WebApiCoreDevelopment\WebApiCore\WebApiCore.Data\bin\Debug\net5.0\WebApiCore.Data.dll
+D:\Video Course\ITVDN\ASP.NET Core Web API. Практический курс (2021)\WebApiCoreDevelopment\WebApiCore\WebApiCore.Data\bin\Debug\net5.0\ref\WebApiCore.Data.dll
+D:\Video Course\ITVDN\ASP.NET Core Web API. Практический курс (2021)\WebApiCoreDevelopment\WebApiCore\WebApiCore.Data\bin\Debug\net5.0\WebApiCore.Data.pdb
+D:\Video Course\ITVDN\ASP.NET Core Web API. Практический курс (2021)\WebApiCoreDevelopment\WebApiCore\WebApiCore.Data\obj\Debug\net5.0\WebApiCore.Data.csprojAssemblyReference.cache
+D:\Video Course\ITVDN\ASP.NET Core Web API. Практический курс (2021)\WebApiCoreDevelopment\WebApiCore\WebApiCore.Data\obj\Debug\net5.0\WebApiCore.Data.GeneratedMSBuildEditorConfig.editorconfig
+D:\Video Course\ITVDN\ASP.NET Core Web API. Практический курс (2021)\WebApiCoreDevelopment\WebApiCore\WebApiCore.Data\obj\Debug\net5.0\WebApiCore.Data.AssemblyInfoInputs.cache
+D:\Video Course\ITVDN\ASP.NET Core Web API. Практический курс (2021)\WebApiCoreDevelopment\WebApiCore\WebApiCore.Data\obj\Debug\net5.0\WebApiCore.Data.AssemblyInfo.cs
+D:\Video Course\ITVDN\ASP.NET Core Web API. Практический курс (2021)\WebApiCoreDevelopment\WebApiCore\WebApiCore.Data\obj\Debug\net5.0\WebApiCore.Data.csproj.CoreCompileInputs.cache
+D:\Video Course\ITVDN\ASP.NET Core Web API. Практический курс (2021)\WebApiCoreDevelopment\WebApiCore\WebApiCore.Data\obj\Debug\net5.0\WebApiCore.Data.dll
+D:\Video Course\ITVDN\ASP.NET Core Web API. Практический курс (2021)\WebApiCoreDevelopment\WebApiCore\WebApiCore.Data\obj\Debug\net5.0\ref\WebApiCore.Data.dll
+D:\Video Course\ITVDN\ASP.NET Core Web API. Практический курс (2021)\WebApiCoreDevelopment\WebApiCore\WebApiCore.Data\obj\Debug\net5.0\WebApiCore.Data.pdb
