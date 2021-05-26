@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using Microsoft.AspNetCore.Mvc;
-using WebApiCore.Api.Models;
-using WebApiCore.Api.Repository;
+using WebApiCore.Data.Models;
+using WebApiCore.Data.Repository;
 
 namespace WebApiCore.Api.Controllers
 {

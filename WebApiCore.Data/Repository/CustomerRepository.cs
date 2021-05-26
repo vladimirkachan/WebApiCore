@@ -1,12 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using WebApiCore.Api.Context;
-using WebApiCore.Api.Models;
+using WebApiCore.Data.Context;
+using WebApiCore.Data.Models;
 
-namespace WebApiCore.Api.Repository
+namespace WebApiCore.Data.Repository
 {
     public class CustomerRepository : IRepository<Customer>
     {

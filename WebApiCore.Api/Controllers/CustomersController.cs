@@ -1,9 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 using Microsoft.AspNetCore.Mvc;
-using Services;
-using WebApiCore.Api.Models;
-using WebApiCore.Api.Repository;
+using WebApiCore.Data.Models;
+using WebApiCore.Data.Repository;
 
 namespace WebApiCore.Api.Controllers
 {

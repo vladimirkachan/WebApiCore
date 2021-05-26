@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Video Course\\ITVDN\\ASP.NET Core Web API. Практический курс (2021)\\WebApiCore\\WebApiCore.Api\\WebApiCore.Api.csproj": {}
+    "D:\\Video Course\\ITVDN\\ASP.NET Core Web API. Практический курс (2021)\\WebApiCoreDevelopment\\WebApiCore\\WebApiCore.Api\\WebApiCore.Api.csproj": {}
   },
   "projects": {
-    "D:\\Video Course\\ITVDN\\ASP.NET Core Web API. Практический курс (2021)\\WebApiCore\\WebApiCore.Api\\WebApiCore.Api.csproj": {
+    "D:\\Video Course\\ITVDN\\ASP.NET Core Web API. Практический курс (2021)\\WebApiCoreDevelopment\\WebApiCore\\WebApiCore.Api\\WebApiCore.Api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Video Course\\ITVDN\\ASP.NET Core Web API. Практический курс (2021)\\WebApiCore\\WebApiCore.Api\\WebApiCore.Api.csproj",
+        "projectUniqueName": "D:\\Video Course\\ITVDN\\ASP.NET Core Web API. Практический курс (2021)\\WebApiCoreDevelopment\\WebApiCore\\WebApiCore.Api\\WebApiCore.Api.csproj",
         "projectName": "WebApiCore.Api",
-        "projectPath": "D:\\Video Course\\ITVDN\\ASP.NET Core Web API. Практический курс (2021)\\WebApiCore\\WebApiCore.Api\\WebApiCore.Api.csproj",
+        "projectPath": "D:\\Video Course\\ITVDN\\ASP.NET Core Web API. Практический курс (2021)\\WebApiCoreDevelopment\\WebApiCore\\WebApiCore.Api\\WebApiCore.Api.csproj",
         "packagesPath": "C:\\Users\\Vladimir\\.nuget\\packages\\",
-        "outputPath": "D:\\Video Course\\ITVDN\\ASP.NET Core Web API. Практический курс (2021)\\WebApiCore\\WebApiCore.Api\\obj\\",
+        "outputPath": "D:\\Video Course\\ITVDN\\ASP.NET Core Web API. Практический курс (2021)\\WebApiCoreDevelopment\\WebApiCore\\WebApiCore.Api\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -32,8 +32,8 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "D:\\Video Course\\ITVDN\\ASP.NET Core Web API. Практический курс (2021)\\WebApiCore\\WebApiCore.Data\\WebApiCore.Data.csproj": {
-                "projectPath": "D:\\Video Course\\ITVDN\\ASP.NET Core Web API. Практический курс (2021)\\WebApiCore\\WebApiCore.Data\\WebApiCore.Data.csproj"
+              "D:\\Video Course\\ITVDN\\ASP.NET Core Web API. Практический курс (2021)\\WebApiCoreDevelopment\\WebApiCore\\WebApiCore.Data\\WebApiCore.Data.csproj": {
+                "projectPath": "D:\\Video Course\\ITVDN\\ASP.NET Core Web API. Практический курс (2021)\\WebApiCoreDevelopment\\WebApiCore\\WebApiCore.Data\\WebApiCore.Data.csproj"
               }
             }
           }
@@ -91,14 +91,14 @@
         }
       }
     },
-    "D:\\Video Course\\ITVDN\\ASP.NET Core Web API. Практический курс (2021)\\WebApiCore\\WebApiCore.Data\\WebApiCore.Data.csproj": {
+    "D:\\Video Course\\ITVDN\\ASP.NET Core Web API. Практический курс (2021)\\WebApiCoreDevelopment\\WebApiCore\\WebApiCore.Data\\WebApiCore.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Video Course\\ITVDN\\ASP.NET Core Web API. Практический курс (2021)\\WebApiCore\\WebApiCore.Data\\WebApiCore.Data.csproj",
+        "projectUniqueName": "D:\\Video Course\\ITVDN\\ASP.NET Core Web API. Практический курс (2021)\\WebApiCoreDevelopment\\WebApiCore\\WebApiCore.Data\\WebApiCore.Data.csproj",
         "projectName": "WebApiCore.Data",
-        "projectPath": "D:\\Video Course\\ITVDN\\ASP.NET Core Web API. Практический курс (2021)\\WebApiCore\\WebApiCore.Data\\WebApiCore.Data.csproj",
+        "projectPath": "D:\\Video Course\\ITVDN\\ASP.NET Core Web API. Практический курс (2021)\\WebApiCoreDevelopment\\WebApiCore\\WebApiCore.Data\\WebApiCore.Data.csproj",
         "packagesPath": "C:\\Users\\Vladimir\\.nuget\\packages\\",
-        "outputPath": "D:\\Video Course\\ITVDN\\ASP.NET Core Web API. Практический курс (2021)\\WebApiCore\\WebApiCore.Data\\obj\\",
+        "outputPath": "D:\\Video Course\\ITVDN\\ASP.NET Core Web API. Практический курс (2021)\\WebApiCoreDevelopment\\WebApiCore\\WebApiCore.Data\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -130,6 +130,12 @@
       "frameworks": {
         "net5.0": {
           "targetAlias": "net5.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.0.6, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

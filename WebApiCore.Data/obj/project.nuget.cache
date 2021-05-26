@@ -1,8 +1,23 @@
 {
   "version": 2,
-  "dgSpecHash": "DT/EWD54UdOIvwKgbaIHqpSb+z2cUQNE+L9rOKdsosLJGq65LGJXAuj3VdbcVcsx+SzjYZnfdyZBeyr1XpKKxw==",
+  "dgSpecHash": "OjXE8rEGkz06ylL3OSW9zNOlnkQGKyt9ynht2q1pKktepGoUeIzAJLM6KBBagckqdcfPfJmGbKLamzLxOEOr7w==",
   "success": true,
-  "projectFilePath": "D:\\Video Course\\ITVDN\\ASP.NET Core Web API. Практический курс (2021)\\WebApiCore\\WebApiCore.Data\\WebApiCore.Data.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "D:\\Video Course\\ITVDN\\ASP.NET Core Web API. Практический курс (2021)\\WebApiCoreDevelopment\\WebApiCore\\WebApiCore.Data\\WebApiCore.Data.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Vladimir\\.nuget\\packages\\microsoft.entityframeworkcore\\5.0.6\\microsoft.entityframeworkcore.5.0.6.nupkg.sha512",
+    "C:\\Users\\Vladimir\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\5.0.6\\microsoft.entityframeworkcore.abstractions.5.0.6.nupkg.sha512",
+    "C:\\Users\\Vladimir\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\5.0.6\\microsoft.entityframeworkcore.analyzers.5.0.6.nupkg.sha512",
+    "C:\\Users\\Vladimir\\.nuget\\packages\\microsoft.extensions.caching.abstractions\\5.0.0\\microsoft.extensions.caching.abstractions.5.0.0.nupkg.sha512",
+    "C:\\Users\\Vladimir\\.nuget\\packages\\microsoft.extensions.caching.memory\\5.0.0\\microsoft.extensions.caching.memory.5.0.0.nupkg.sha512",
+    "C:\\Users\\Vladimir\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\5.0.1\\microsoft.extensions.dependencyinjection.5.0.1.nupkg.sha512",
+    "C:\\Users\\Vladimir\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\5.0.0\\microsoft.extensions.dependencyinjection.abstractions.5.0.0.nupkg.sha512",
+    "C:\\Users\\Vladimir\\.nuget\\packages\\microsoft.extensions.logging\\5.0.0\\microsoft.extensions.logging.5.0.0.nupkg.sha512",
+    "C:\\Users\\Vladimir\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\5.0.0\\microsoft.extensions.logging.abstractions.5.0.0.nupkg.sha512",
+    "C:\\Users\\Vladimir\\.nuget\\packages\\microsoft.extensions.options\\5.0.0\\microsoft.extensions.options.5.0.0.nupkg.sha512",
+    "C:\\Users\\Vladimir\\.nuget\\packages\\microsoft.extensions.primitives\\5.0.0\\microsoft.extensions.primitives.5.0.0.nupkg.sha512",
+    "C:\\Users\\Vladimir\\.nuget\\packages\\system.collections.immutable\\5.0.0\\system.collections.immutable.5.0.0.nupkg.sha512",
+    "C:\\Users\\Vladimir\\.nuget\\packages\\system.componentmodel.annotations\\5.0.0\\system.componentmodel.annotations.5.0.0.nupkg.sha512",
+    "C:\\Users\\Vladimir\\.nuget\\packages\\system.diagnostics.diagnosticsource\\5.0.1\\system.diagnostics.diagnosticsource.5.0.1.nupkg.sha512"
+  ],
   "logs": []
 }
