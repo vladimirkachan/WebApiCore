@@ -26,7 +26,6 @@ D:\Video Course\ITVDN\ASP.NET Core Web API. Практический курс (2
 D:\Video Course\ITVDN\ASP.NET Core Web API. Практический курс (2021)\Lesson5\WebApiCore\WebApiCore.Data\bin\Debug\net5.0\WebApiCore.Data.dll
 D:\Video Course\ITVDN\ASP.NET Core Web API. Практический курс (2021)\Lesson5\WebApiCore\WebApiCore.Data\bin\Debug\net5.0\ref\WebApiCore.Data.dll
 D:\Video Course\ITVDN\ASP.NET Core Web API. Практический курс (2021)\Lesson5\WebApiCore\WebApiCore.Data\bin\Debug\net5.0\WebApiCore.Data.pdb
-D:\Video Course\ITVDN\ASP.NET Core Web API. Практический курс (2021)\Lesson5\WebApiCore\WebApiCore.Data\obj\Debug\net5.0\WebApiCore.Data.csprojAssemblyReference.cache
 D:\Video Course\ITVDN\ASP.NET Core Web API. Практический курс (2021)\Lesson5\WebApiCore\WebApiCore.Data\obj\Debug\net5.0\WebApiCore.Data.GeneratedMSBuildEditorConfig.editorconfig
 D:\Video Course\ITVDN\ASP.NET Core Web API. Практический курс (2021)\Lesson5\WebApiCore\WebApiCore.Data\obj\Debug\net5.0\WebApiCore.Data.AssemblyInfoInputs.cache
 D:\Video Course\ITVDN\ASP.NET Core Web API. Практический курс (2021)\Lesson5\WebApiCore\WebApiCore.Data\obj\Debug\net5.0\WebApiCore.Data.AssemblyInfo.cs
@@ -37,3 +36,4 @@ D:\Video Course\ITVDN\ASP.NET Core Web API. Практический курс (2
 D:\Video Course\ITVDN\ASP.NET Core Web API. Практический курс (2021)\Lesson5\WebApiCore\WebApiCore.Data\bin\Debug\net5.0\WebApiCore.Data.runtimeconfig.json
 D:\Video Course\ITVDN\ASP.NET Core Web API. Практический курс (2021)\Lesson5\WebApiCore\WebApiCore.Data\bin\Debug\net5.0\WebApiCore.Data.runtimeconfig.dev.json
 D:\Video Course\ITVDN\ASP.NET Core Web API. Практический курс (2021)\Lesson5\WebApiCore\WebApiCore.Data\obj\Debug\net5.0\WebApiCore.Data.genruntimeconfig.cache
+D:\Video Course\ITVDN\ASP.NET Core Web API. Практический курс (2021)\Lesson5\WebApiCore\WebApiCore.Data\obj\Debug\net5.0\WebApiCore.Data.csprojAssemblyReference.cache

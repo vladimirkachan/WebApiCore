@@ -28,13 +28,31 @@ namespace WebApiCore.Api.Migrations
                     Id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
                     Status = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    Temperature = table.Column<float>(type: "real", nullable: false),
-                    MinTemperature = table.Column<float>(type: "real", nullable: false),
-                    MaxTemperature = table.Column<float>(type: "real", nullable: false)
+                    Temperature = table.Column<double>(type: "float", nullable: false),
+                    MinTemperature = table.Column<double>(type: "float", nullable: false),
+                    MaxTemperature = table.Column<double>(type: "float", nullable: false)
                 },
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_Weathers", x => x.Id);
+                });
+
+            migrationBuilder.InsertData(
+                table: "Customers",
+                columns: new[] { "Id", "BirthDate", "Email", "Name" },
+                values: new object[,]
+                {
+                    { "1", new DateTime(2000, 3, 7, 0, 0, 0, 0, DateTimeKind.Unspecified), "vasyavetrov@mail.ru", "Vasya" },
+                    { "2", new DateTime(2001, 11, 22, 0, 0, 0, 0, DateTimeKind.Unspecified), null, "Maria" }
+                });
+
+            migrationBuilder.InsertData(
+                table: "Weathers",
+                columns: new[] { "Id", "MaxTemperature", "MinTemperature", "Status", "Temperature" },
+                values: new object[,]
+                {
+                    { 10, 5.25, -50.0, "snowy", -10.5 },
+                    { 20, 0.0, 0.0, "windy", 20.370000000000001 }
                 });
         }
 
