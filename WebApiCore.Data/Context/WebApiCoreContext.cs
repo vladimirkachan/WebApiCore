@@ -14,7 +14,7 @@ namespace WebApiCore.Data.Context
 
         }
 
-        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder) 
         {
             
         } 
@@ -23,6 +23,9 @@ namespace WebApiCore.Data.Context
         {
             modelBuilder.Entity<Customer>().HasData(new Customer {Id = "1", Name = "Vova", BirthDate = new DateTime(2000, 03, 07)});
             modelBuilder.Entity<Customer>().HasData(new Customer {Id = "2", Name = "Maria", BirthDate = new DateTime(2001, 11, 22)});
+            modelBuilder.Entity<Weather>().HasData(new Weather { Id = 10, Status = "snowy", Temperature = -10.5, MaxTemperature = 5.25, MinTemperature = -50});
+            modelBuilder.Entity<Weather>().HasData(new Weather { Id = 20, Status = "windy", Temperature = 20.37});
+
         }
     }
 }

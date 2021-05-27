@@ -1384,7 +1384,8 @@
       },
       "WebApiCore.Data/1.0.0": {
         "dependencies": {
-          "Microsoft.EntityFrameworkCore": "5.0.6"
+          "Microsoft.EntityFrameworkCore": "5.0.6",
+          "Microsoft.EntityFrameworkCore.SqlServer": "5.0.6"
         },
         "runtime": {
           "WebApiCore.Data.dll": {}
