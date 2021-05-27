@@ -17,6 +17,17 @@ namespace WebApiCore.Api.Controllers
             Context = context;
         }
 
+        [HttpPost("mega-post/{routeName}")] // http://localhost:5000/api/customers/mega-post
+        public IEnumerable<Customer> Post(
+        [FromQuery] string queryName,
+        [FromRoute] string routeName,
+        [FromForm] Customer a,
+        [FromBody] Customer b,
+        [FromHeader] string headerName)
+        {
+            return Context.All;
+        }
+
         [HttpGet]
         public IEnumerable<Customer> Get()
         {
