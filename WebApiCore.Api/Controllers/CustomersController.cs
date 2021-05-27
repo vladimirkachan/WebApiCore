@@ -15,7 +15,6 @@ namespace WebApiCore.Api.Controllers
         public CustomersController(IRepository<Customer> context)
         {
             Context = context;
-            //Context = IoCContainer.Resolve<IRepository<Customer>>();
         }
 
         [HttpGet]
@@ -27,16 +26,25 @@ namespace WebApiCore.Api.Controllers
         [HttpGet("{id}")]
         public ActionResult<Customer> Get(int id)
         {
-            return new Customer {BirthDate = DateTime.Now, Email = "kachan@mail.com", Name = "Vova", Id = id.ToString()};
+            return Context.FindById(id);
         }
 
         [HttpPost]
-        public void Post([FromQuery] Customer value) {}
+        public void Post([FromQuery] Customer value)
+        {
+            Context.Update(value); 
+        }
 
         [HttpPut("{id}")]
-        public void Put(int id, [FromBody] Customer value) {}
+        public void Put(int id, [FromBody] Customer value)
+        {
+            Context.Add(value);
+        }
 
         [HttpDelete("{id}")]
-        public void Delete(int id) {}
+        public void Delete(int id)
+        {
+            Context.Delete(Context.FindById(id));
+        }
     }
 }

@@ -24,20 +24,16 @@ namespace WebApiCore.Api
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            string connectionString = Configuration.GetSection("ConnectionString")["DefaultConnection"];
             services.AddControllers();
+            string connectionString = Configuration.GetSection("ConnectionString")["DefaultConnection"];
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "WebApiCore.Api", Version = "v1" });
             });
-            services.AddDbContext<WebApiCoreContext>(
-            builder => builder.UseSqlServer(connectionString, b => b.MigrationsAssembly("WebApiCore.Api")));
-            //services.AddSingleton<IRepository<Customer>, CustomerRepository>();
+            services.AddDbContext<WebApiCoreContext>(builder => 
+                                                     builder.UseSqlServer(connectionString, b => b.MigrationsAssembly("WebApiCore.Api")));
             services.AddScoped<IRepository<Customer>, CustomerRepository>();
-            //services.AddTransient<IRepository<Customer>, CustomerRepository>();
             services.AddScoped<IRepository<Weather>, WeatherRepository>();
-            IoCContainer.Register<IRepository<Customer>, CustomerRepository>();
-            IoCContainer.Register<IRepository<Weather>, WeatherRepository>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
