@@ -10,7 +10,7 @@ using WebApiCore.Data.Context;
 namespace WebApiCore.Api.Migrations
 {
     [DbContext(typeof(WebApiCoreContext))]
-    [Migration("20210527185243_Init")]
+    [Migration("20210529075351_Init")]
     partial class Init
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

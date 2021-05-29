@@ -17,21 +17,22 @@ namespace WebApiCore.Api.Controllers
             Context = context;
         }
 
-        [HttpPost("mega-post/{routeName}")] // http://localhost:5000/api/customers/mega-post
+        [HttpPost("mega-post")]
+        [HttpPost("mega-post/{routeName}")] // POST http://localhost:5000/api/customers/mega-post
         public IEnumerable<Customer> Post(
-        [FromQuery] string queryName,
-        [FromRoute] string routeName,
-        [FromForm] Customer a,
-        [FromBody] Customer b,
-        [FromHeader] string headerName)
+        [FromQuery] string queryName,   // - https://domain.com/api/customers/mega-post?queryName=NameFromQuery?id=1 
+        [FromRoute] string routeName,   // - https://domain.com/api/customers/mega-post?NameFromRouter 
+        [FromForm] Customer a,          // - https://domain.com/api/customers/mega-post Form-Body:  Id: 15  Name: NameFromForm
+        [FromBody] Customer b,          // - https://domain.com/api/customers/mega-post Body:   { Id: 15, name: "NameFromBody" }
+        [FromHeader] string headerName) // - https://domain.com/api/customers/mega-post Headers: headerName: NameFromHeader
         {
             return Context.All;
         }
 
         [HttpGet]
-        public IEnumerable<Customer> Get()
+        public ActionResult< IEnumerable<Customer>> Get()
         {
-            return Context.All;
+            return Ok(Context.All);
         }
 
         [HttpGet("{id}")]

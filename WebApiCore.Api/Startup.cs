@@ -5,7 +5,6 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.OpenApi.Models;
-using Services;
 using WebApiCore.Data.Context;
 using WebApiCore.Data.Models;
 using WebApiCore.Data.Repository;
@@ -26,14 +25,14 @@ namespace WebApiCore.Api
         {
             services.AddControllers();
             string connectionString = Configuration.GetSection("ConnectionString")["DefaultConnection"];
-            services.AddSwaggerGen(c =>
-            {
-                c.SwaggerDoc("v1", new OpenApiInfo { Title = "WebApiCore.Api", Version = "v1" });
-            });
             services.AddDbContext<WebApiCoreContext>(builder => 
                                                      builder.UseSqlServer(connectionString, b => b.MigrationsAssembly("WebApiCore.Api")));
             services.AddScoped<IRepository<Customer>, CustomerRepository>();
             services.AddScoped<IRepository<Weather>, WeatherRepository>();
+            services.AddSwaggerGen(c =>
+            {
+                c.SwaggerDoc("lesson5", new OpenApiInfo { Title = "WebApiCore.Api", Version = "Lesson5" });
+            });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -43,7 +42,7 @@ namespace WebApiCore.Api
             {
                 app.UseDeveloperExceptionPage();
                 app.UseSwagger();
-                app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "WebApiCore.Api v1"));
+                app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/lesson5/swagger.json", "WebApiCore.Api lesson5"));
             }
 
             app.UseHttpsRedirection();

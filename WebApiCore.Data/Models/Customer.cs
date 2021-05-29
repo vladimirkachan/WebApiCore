@@ -10,5 +10,6 @@ namespace WebApiCore.Data.Models
         public string Name {get; set;}
         public string Email {get; set;}
         public DateTime BirthDate {get; set;}
+
     }
 }
